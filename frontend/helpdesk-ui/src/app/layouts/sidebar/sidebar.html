@@ -1,0 +1,43 @@
+
+<aside class="sidebar">
+
+  <!-- Logo Section -->
+  <div class="sidebar-brand">
+    <div class="brand-icon">H</div>
+
+    <div class="brand-text">
+      <h2>HelpDesk</h2>
+      <span>IT Support System</span>
+    </div>
+  </div>
+
+  <!-- Navigation Section -->
+  <nav class="sidebar-nav">
+
+    <p class="nav-heading">MAIN MENU</p>
+
+    @for (item of navItems; track item.route) {
+      <a
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        class="nav-item"
+      >
+        <span class="nav-icon">{{ item.icon }}</span>
+        <span class="nav-label">{{ item.label }}</span>
+      </a>
+    }
+
+  </nav>
+
+  <!-- Bottom Section -->
+  <div class="sidebar-footer">
+    <div class="footer-icon">?</div>
+
+    <div>
+      <strong>Need help?</strong>
+      <p>Contact IT Support</p>
+    </div>
+  </div>
+
+</aside>
+

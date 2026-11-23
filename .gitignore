@@ -1,0 +1,37 @@
+# Angular / Node
+node_modules/
+frontend/**/node_modules/
+dist/
+frontend/**/dist/
+.angular/
+frontend/**/.angular/
+coverage/
+
+# Java / Maven
+target/
+backend/**/target/
+*.class
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+application-local.yml
+
+# Logs
+*.log
+logs/
+
+# IDE
+.idea/
+*.iml
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

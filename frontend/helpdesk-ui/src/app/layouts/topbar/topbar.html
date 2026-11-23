@@ -1,0 +1,44 @@
+
+<header class="topbar">
+
+  <!-- Page heading -->
+  <div class="topbar-heading">
+    <h1>Welcome back!</h1>
+    <p>Here's what's happening with your support system today.</p>
+  </div>
+
+  <!-- Topbar actions -->
+  <div class="topbar-actions">
+
+    <!-- Search -->
+    <div class="search-box">
+      <span class="search-icon">⌕</span>
+
+      <input
+        type="text"
+        [placeholder]="searchPlaceholder"
+      />
+    </div>
+
+    <!-- Notifications -->
+    <button class="notification-button" type="button">
+      <span>♧</span>
+      <span class="notification-dot"></span>
+    </button>
+
+    <!-- User Profile -->
+    <div class="user-profile">
+      <div class="user-avatar">{{ userInitials }}</div>
+
+      <div class="user-info">
+        <strong>{{ userName }}</strong>
+        <span>{{ userRole }}</span>
+      </div>
+
+      <span class="profile-arrow">⌄</span>
+    </div>
+
+  </div>
+
+</header>
+

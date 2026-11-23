@@ -1,0 +1,46 @@
+
+:host {
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f4f6f9;
+}
+
+app-sidebar {
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.main-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+app-topbar {
+  flex-shrink: 0;
+}
+
+.page-content {
+  flex: 1;
+  padding: 28px 32px;
+  overflow-y: auto;
+  background-color: #f4f6f9;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .page-content {
+    padding: 20px;
+  }
+}
