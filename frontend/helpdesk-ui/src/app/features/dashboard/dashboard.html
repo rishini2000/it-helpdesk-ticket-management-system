@@ -1,1 +1,303 @@
-<p>dashboard works!</p>
+<div class="dashboard">
+
+  <!-- Dashboard Header -->
+  <div class="dashboard-header">
+    <div>
+      <h1>Dashboard</h1>
+      <p>Overview of your IT support operations.</p>
+    </div>
+
+    <button class="create-ticket-btn">
+      + Create New Ticket
+    </button>
+  </div>
+
+  <!-- Summary Cards -->
+  <div class="summary-cards">
+
+    <!-- Total Tickets -->
+    <div class="summary-card">
+      <div class="card-info">
+        <p>Total Tickets</p>
+        <h2>248</h2>
+        <span class="card-description">All tickets in the system</span>
+      </div>
+      <div class="card-icon total-icon">
+        🎫
+      </div>
+    </div>
+
+    <!-- Open Tickets -->
+    <div class="summary-card">
+      <div class="card-info">
+        <p>Open Tickets</p>
+        <h2>42</h2>
+        <span class="card-description">Awaiting support</span>
+      </div>
+      <div class="card-icon open-icon">
+        📬
+      </div>
+    </div>
+
+    <!-- In Progress -->
+    <div class="summary-card">
+      <div class="card-info">
+        <p>In Progress</p>
+        <h2>18</h2>
+        <span class="card-description">Currently being handled</span>
+      </div>
+      <div class="card-icon progress-icon">
+        ⚙️
+      </div>
+    </div>
+
+    <!-- Resolved -->
+    <div class="summary-card">
+      <div class="card-info">
+        <p>Resolved</p>
+        <h2>156</h2>
+        <span class="card-description">Successfully resolved</span>
+      </div>
+      <div class="card-icon resolved-icon">
+        ✔
+      </div>
+    </div>
+
+  </div>
+<!-- Ticket Status Overview -->
+<div class="status-overview-card">
+
+  <div class="section-header">
+    <h2>Ticket Status Overview</h2>
+    <span class="section-subtitle">Current ticket distribution</span>
+  </div>
+
+  <div class="status-list">
+
+    <div class="status-item">
+      <div class="status-info">
+        <span class="status-name">Open</span>
+        <span class="status-count">42</span>
+      </div>
+      <div class="status-progress">
+        <div class="status-bar open-bar"></div>
+      </div>
+    </div>
+
+    <div class="status-item">
+      <div class="status-info">
+        <span class="status-name">Assigned</span>
+        <span class="status-count">32</span>
+      </div>
+      <div class="status-progress">
+        <div class="status-bar assigned-bar"></div>
+      </div>
+    </div>
+
+    <div class="status-item">
+      <div class="status-info">
+        <span class="status-name">In Progress</span>
+        <span class="status-count">18</span>
+      </div>
+      <div class="status-progress">
+        <div class="status-bar progress-bar"></div>
+      </div>
+    </div>
+
+    <div class="status-item">
+      <div class="status-info">
+        <span class="status-name">Pending</span>
+        <span class="status-count">12</span>
+      </div>
+      <div class="status-progress">
+        <div class="status-bar pending-bar"></div>
+      </div>
+    </div>
+
+    <div class="status-item">
+      <div class="status-info">
+        <span class="status-name">Resolved</span>
+        <span class="status-count">156</span>
+      </div>
+      <div class="status-progress">
+        <div class="status-bar resolved-bar"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Recent Tickets -->
+<div class="recent-tickets-card">
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <div>
+      <h2>Recent Tickets</h2>
+      <span class="section-subtitle">Latest support requests</span>
+    </div>
+
+    <button class="view-all-btn">
+      View All
+    </button>
+  </div>
+
+  <!-- Tickets Table -->
+  <div class="table-container">
+    <table class="tickets-table">
+
+      <thead>
+        <tr>
+          <th>Ticket ID</th>
+          <th>Subject</th>
+          <th>Requester</th>
+          <th>Priority</th>
+          <th>Status</th>
+          <th>Assigned To</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td class="ticket-id">#TK-1048</td>
+          <td>Unable to connect to Wi-Fi</td>
+          <td>John Smith</td>
+          <td><span class="priority-badge high">High</span></td>
+          <td><span class="status-badge in-progress">In Progress</span></td>
+          <td>Michael Scott</td>
+        </tr>
+
+        <tr>
+          <td class="ticket-id">#TK-1047</td>
+          <td>Printer not working</td>
+          <td>Sarah Johnson</td>
+          <td><span class="priority-badge medium">Medium</span></td>
+          <td><span class="status-badge open">Open</span></td>
+          <td>David Miller</td>
+        </tr>
+
+        <tr>
+          <td class="ticket-id">#TK-1046</td>
+          <td>Email account access issue</td>
+          <td>James Wilson</td>
+          <td><span class="priority-badge critical">Critical</span></td>
+          <td><span class="status-badge pending">Pending</span></td>
+          <td>Emily Davis</td>
+        </tr>
+
+        <tr>
+          <td class="ticket-id">#TK-1045</td>
+          <td>Software installation request</td>
+          <td>Emma Brown</td>
+          <td><span class="priority-badge low">Low</span></td>
+          <td><span class="status-badge resolved">Resolved</span></td>
+          <td>Michael Scott</td>
+        </tr>
+
+        <tr>
+          <td class="ticket-id">#TK-1044</td>
+          <td>Computer running slowly</td>
+          <td>Daniel Taylor</td>
+          <td><span class="priority-badge high">High</span></td>
+          <td><span class="status-badge assigned">Assigned</span></td>
+          <td>David Miller</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<!-- Support Team Overview -->
+<div class="support-team-card">
+
+  <div class="section-header">
+    <div>
+      <h2>Support Team Overview</h2>
+      <span class="section-subtitle">Team workload and availability</span>
+    </div>
+
+    <button class="view-all-btn">
+      View Team
+    </button>
+  </div>
+
+  <div class="support-team-list">
+
+    <!-- Agent 1 -->
+    <div class="support-agent">
+      <div class="agent-profile">
+        <div class="agent-avatar avatar-blue">MS</div>
+        <div class="agent-info">
+          <h3>Michael Scott</h3>
+          <span>Senior Support Engineer</span>
+        </div>
+      </div>
+
+      <div class="agent-workload">
+        <strong>12</strong>
+        <span>Assigned Tickets</span>
+      </div>
+
+      <span class="agent-status available">Available</span>
+    </div>
+
+    <!-- Agent 2 -->
+    <div class="support-agent">
+      <div class="agent-profile">
+        <div class="agent-avatar avatar-purple">DM</div>
+        <div class="agent-info">
+          <h3>David Miller</h3>
+          <span>IT Support Engineer</span>
+        </div>
+      </div>
+
+      <div class="agent-workload">
+        <strong>8</strong>
+        <span>Assigned Tickets</span>
+      </div>
+
+      <span class="agent-status busy">Busy</span>
+    </div>
+
+    <!-- Agent 3 -->
+    <div class="support-agent">
+      <div class="agent-profile">
+        <div class="agent-avatar avatar-green">ED</div>
+        <div class="agent-info">
+          <h3>Emily Davis</h3>
+          <span>Support Specialist</span>
+        </div>
+      </div>
+
+      <div class="agent-workload">
+        <strong>5</strong>
+        <span>Assigned Tickets</span>
+      </div>
+
+      <span class="agent-status available">Available</span>
+    </div>
+
+    <!-- Agent 4 -->
+    <div class="support-agent">
+      <div class="agent-profile">
+        <div class="agent-avatar avatar-orange">RW</div>
+        <div class="agent-info">
+          <h3>Robert Wilson</h3>
+          <span>IT Support Engineer</span>
+        </div>
+      </div>
+
+      <div class="agent-workload">
+        <strong>10</strong>
+        <span>Assigned Tickets</span>
+      </div>
+
+      <span class="agent-status busy">Busy</span>
+    </div>
+
+  </div>
+
+</div>
+</div>
